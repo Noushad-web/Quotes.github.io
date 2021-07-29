@@ -2,7 +2,10 @@ const quoteDiv = document.getElementById('quotes');
 const authorDiv = document.getElementById('author');
 const btn = document.getElementById('btn');
 const api = 'https://type.fit/api/quotes';
-let realData = ""
+let realData = "";
+
+
+
 const getNewQuotes = () => {
     let randomNumber = Math.floor(Math.random() * (1643 - 1) + 1);
     // console.log(randomNumber);

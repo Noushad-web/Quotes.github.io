@@ -1,6 +1,6 @@
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300;1,400&family=Oleo+Script:wght@400;700&family=Overlock:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -12,21 +12,20 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
-    background:linear-gradient(45deg ,#040d15 , #081a2a  );
+    /* background:linear-gradient(45deg ,#040d15 , #081a2a  ); */
+    background-image: url('./alvaro-serrano-hjwKMkehBco-unsplash.jpg');
+    background-size: cover;
     font-size: 14px;
 }
 
 .wrapper{
     width: 50%;
-    /* background-color: #6565ff; */
     padding: 2em 2em;
-    /* border:1px solid white; */
     border-radius: 10px;
-    min-height: 50%;
+    min-height: 40%;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    background:linear-gradient(-45deg ,#040d15 , #081a2a  ) no-repeat;
+    background:linear-gradient(-45deg ,#091c2c , #081a2a  ) no-repeat;
     display: grid;
-
     place-items: center;
     position: relative;
 }
@@ -60,19 +59,29 @@ body{
     transform: rotate(-5deg);
 }
 
-p{
-    font-size: 1.3rem;
+q,p{
+  
     color: whitesmoke;
-    width: 100%;
+    width: 100%; 
 }
 #quotes{
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Overlock', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
+
+
 #author{
+    font-size: 1.3rem;
     text-align: end;
+    font-family: 'Oleo Script', cursive;
+    letter-spacing: 1px;
+}
+#author::before{
+    content: '\2014';
+    color: white;
 }
 
 /* ripple effect start from here  */
@@ -116,9 +125,9 @@ span{
 
 
 @media screen  and (max-width:769px){
-    p{
+    /* p,q{
         font-size: 0.8rem;
-    }
+    } */
 
     .wrapper{
         width: 90%;
@@ -130,6 +139,14 @@ span{
     }
     .wrapper::after{
         transform: rotate(0deg);
+    }
+
+    #quotes{
+        font-size: 1rem;
+    }
+
+    #author{
+        font-size: 0.8rem;
     }
 
 }
